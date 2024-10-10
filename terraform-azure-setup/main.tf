@@ -1,6 +1,13 @@
 provider "azurerm" {
   features {}
+
+  # Uncomment these lines if you want to authenticate using a Service Principal
+  # client_id       = "<YOUR_APP_ID>"
+  # client_secret   = "<YOUR_PASSWORD>"
+  # tenant_id       = "<YOUR_TENANT_ID>"
+  # subscription_id  = "<YOUR_SUBSCRIPTION_ID>"
 }
+
 
 # Include Resource Group Module
 module "resource_group" {
